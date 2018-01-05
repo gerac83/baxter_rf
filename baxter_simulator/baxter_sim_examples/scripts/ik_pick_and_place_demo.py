@@ -181,7 +181,7 @@ class PickAndPlace(object):
         # retract to clear object
         self._retract()
 
-def load_gazebo_models(table_pose=Pose(position=Point(x=1.0, y=0.0, z=0.0)),
+def load_gazebo_models(table_pose=Pose(position=Point(x=1.0, y=0.0, z=-0.93)),
                        table_reference_frame="world",
                        block_pose=Pose(position=Point(x=0.6725, y=0.1265, z=0.7825)),
                        block_reference_frame="world"):
