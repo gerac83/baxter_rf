@@ -24,12 +24,5 @@
   
   <!-- Coffe Table -->
   <xacro:include filename="$(find baxter_sim_examples)/models/cafe_table/model.xacro" />
-  
-  <!-- Kinect Sensor -->
-  <xacro:if value="$(arg gazebo)">
-    <xacro:include filename="$(find baxter_description)/urdf/depth_sensor.urdf.xacro" />
-    <sensor_kinect parent="base" location="1.0 -0.0125 2.0" orientation="0 1.57 0.0"/>
-  </xacro:if>
-
 
 </robot>
